@@ -1,0 +1,155 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    background: url('pics/bg.png');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.logo {
+
+    width: 50px;
+    height: 50px;
+    transition: all 3s;
+}
+
+.logo:hover {
+
+    width: 50px;
+    height: 50px;
+    transform: rotate(360deg);
+
+}
+
+.title {
+    color: rgb(17, 28, 149);
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: rgb(181, 37, 37) 1px 1px;
+}
+
+.title:hover {
+    color: blue;
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: skyblue 1px 1px;
+}
+
+.home-btn {
+
+    color: black;
+
+}
+
+.home-btn:hover {
+
+    color: black;
+    border-bottom: 2px solid blue;
+
+}
+
+.about-btn {
+
+    color: black;
+
+}
+
+.about-btn:hover {
+
+    color: black;
+    border-bottom: 2px solid blue;
+
+}
+
+#search_input {
+    border: 3px solid blue;
+}
+
+#nav-btn1 {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#nav-btn {
+    margin-top: 10px;
+}
+
+/* ====================================================== */
+
+.meter_img_main {
+    /* border: 5px solid cyan; */
+    height: 1200px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.meter_img_div {
+    /* border: 5px solid yellow; */
+    height: 700px;
+    width: fit-content;
+
+}
+
+.meter_img {
+    /* border: 2px solid magenta; */
+    width: 500px;
+}
+
+.meter_screen_div {
+    border: 2px solid red;
+    width: fit-content;
+    margin-top: -642px;
+    margin-left: 162px;
+
+}
+
+.meter_screen {
+    background-color: silver;
+    width: 197px;
+    height: 67px;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    color: red;
+    font-size: 50px;
+}
+
+
+
+.rate_div {
+
+    background-color: rgba(165, 42, 42);
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 700px;
+    height: 520px;
+    margin-left: 530px;
+    margin-top: -120px;
+    padding: 30px;
+
+
+}
+
+.rate_css {
+
+    width: 300px;
+    height: 30px;
+    color: yellow;
+    border: 1px solid cyan;
+    border-radius: 4px;
+    background-color: black;
+}
+
+#warning {
+
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: blue;
+    padding: 2px;
+    font-size: 21px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter / Units</title>
+
+    <!-- Css file link  -->
+    <link rel="stylesheet" href="Meter.css">
+
+    <!-- Fav Icon  -->
+    <link rel="Icon" href="pics/fav.png">
+
+    <!-- Bootstrap Links  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Fonts Links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dancing+Script:wght@400;600;700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awosome Icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand"  href="#"><img  src="pics/fav.png" alt="logo" class="logo"></a>
+            <a class="navbar-brand" href="#">
+                <p class="title" ><b>CyberMax Electricity Supply Service</b></p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item" id="nav-btn1">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p class="home-btn"><b>Home</b></p>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="nav-btn">
+                        <a class="nav-link" href="#">
+                            <p class="about-btn"><b>History</b></p>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="nav-btn">
+                        <a class="nav-link" href="#">
+                            <p class="about-btn" id="login_message"></p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled"></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 " id="search_input" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- =========================================================================================== -->
+
+<nav style="margin-top: 50px;">
+
+    <div class="meter_img_div" onclick="logo()">
+        <img src="pics/meter.png" class="meter_img" alt="meter_img">
+    </div>
+    <div class="meter_screen_div">
+        <input disabled type="number" id="meter_main_screen" class="meter_screen">
+    </div>
+
+
+
+
+    <!-- ==================================================================  -->
+    <div class="rate_div">
+        <div class="container">
+
+            <!-- item 1  -->
+            <div class="row">
+                <div class="col-4" >
+                    <p style="color: white;font-size: 20px;">Consumer :</p>
+                </div>
+
+                <div class="col-8" >
+                    <input disabled type="text" id="bill_input_1" class="rate_css">
+                </div>
+            </div>
+
+            <!-- item 2  -->
+            <div class="row">
+                <div class="col-4" >
+                    <p style="color: white;font-size: 20px;">Consumer ID:</p>
+                </div>
+
+                <div class="col-8" >
+                    <input disabled placeholder="58953495923" type="number" id="bill_input_2" class="rate_css">
+                </div>
+            </div>
+
+            <!-- item 3  -->
+            <div class="row">
+                <div class="col-4" >
+                    <p style="color: white;font-size: 20px;">Bill ID:</p>
+                </div>
+
+                <div class="col-8" >
+                    <input disabled placeholder="gfx62990-B" type="number" id="bill_input_3" class="rate_css">
+                </div>
+            </div>
+
+            <!-- item 4  -->
+            <div class="row">
+                <div class="col-4">
+                    <p style="color: white;font-size: 20px;">Units:</p>
+                </div>
+
+                <div class="col-8" >
+                    <input disabled type="number" id="bill_input_4" class="rate_css">
+                </div>
+            </div>
+
+             <!-- Per Unit  -->
+             <div class="row">
+                <div class="col-4">
+                    <p style="color: white;font-size: 20px;">Tax :</p>
+                </div>
+
+                <div class="col-8">
+                    <input disabled type="number" id="bill_input_6" class="rate_css">
+                </div>
+            </div>
+
+            <!-- Per tax -->
+            <div class="row">
+                <div class="col-4">
+                    <p style="color: white;font-size: 20px;">Per Unit (Rs):</p>
+                </div>
+
+                <div class="col-8">
+                    <input disabled type="number" id="bill_input_6_2" class="rate_css">
+                </div>
+            </div>
+
+            
+
+            <!-- item 5  -->
+            <div class="row">
+                <div class="col-4">
+                    <p style="color: white;font-size: 20px;">Total Bill:</p>
+                </div>
+
+                <div class="col-8">
+                    <input disabled type="number" id="bill_input_5" class="rate_css">
+                </div>
+            </div>
+
+           
+
+            <br>
+            <br>
+
+            <!-- item 8  -->
+            <div class="row">
+                <div class="col-12" id="warning">
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</nav>
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+<audio src="audio/shock_sound.mp3" autoplay id="SS"></audio>
+</body>
+
+</html>
